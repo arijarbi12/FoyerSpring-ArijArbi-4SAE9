@@ -21,6 +21,6 @@ public class Bloc {
     private String nom;
     @ManyToOne
     private Foyer f;
-    @OneToMany
+    @OneToMany(mappedBy = "b")
     List<Chambre> c;
 }

@@ -22,12 +22,11 @@ public class Foyer {
     private  Long idFoyer;
     private String nom;
     private String adresse;
-  @OneToOne(mappedBy = "u")
+  @OneToOne(mappedBy = "f")
     private Universite u;
-  @OneToMany
-  List<Bloc> b ;
-  @OneToMany
-    Set<Chambre>c;
+  @OneToMany(mappedBy = "f")
+   private List<Bloc> b ;
+
 
 
 }

@@ -22,7 +22,7 @@ public class Etudiant {
     private String nom;
     private String prenom;
     private Date dateNaissance;
-    @ManyToMany(mappedBy = "r")
+    @ManyToMany(mappedBy = "et")
     List<Reservation>r;
 
 }

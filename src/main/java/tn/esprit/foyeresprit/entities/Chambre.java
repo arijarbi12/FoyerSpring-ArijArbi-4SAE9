@@ -24,5 +24,5 @@ public class Chambre {
     @ManyToOne
     private Bloc b;
    @OneToMany
-   List<Reservation> r;
+   List<Reservation> c;
 }
